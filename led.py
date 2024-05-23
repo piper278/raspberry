@@ -10,3 +10,4 @@ time.sleep(3)
 GPIO.output(LED_PIN, GPIO.LOW)
 
 GPIO.cleanup()
+
