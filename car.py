@@ -1,9 +1,8 @@
-
-
-
 import threading
 import RPi.GPIO as GPIO
 import time
+import cv2
+import numpy as np
 
 GPIO.setmode(GPIO.BCM)
 
@@ -11,9 +10,6 @@ motor_pin1 = 21
 motor_pin2 = 20
 motor_pin3 = 16
 motor_pin4 = 12
-
-import cv2
-import numpy as np
 
 GPIO.setup(motor_pin1, GPIO.OUT)
 GPIO.setup(motor_pin2, GPIO.OUT)
@@ -101,9 +97,6 @@ def drive2(direction):
         turn_right()
     elif (direction <= -60):
         turn_left()    
-
-    
-        
 
 center = 320
 c1=1
