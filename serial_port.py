@@ -1,9 +1,7 @@
 import serial
 import time
 
-# 串口初始化
 ser = serial.Serial('/dev/ttyUSB', 9600)  # 串口设备文件和波特率//S0(引脚)改为USB
-
 try:   
     while True:
         # 接收信息
